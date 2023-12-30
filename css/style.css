@@ -14,6 +14,10 @@ a {
     color: #ffffff;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .button-primary {
     background-color: #ffffff;
     color: #000000;
@@ -23,10 +27,112 @@ a {
     cursor: pointer;
     border-radius: 1rem;
     width: fit-content;
+    transition: ease-in-out 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.button-primary:hover {
+    background-color: #e8e8e8;
+    transition: ease-in-out 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    
 }
 
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+#about,
+#gameplay {
+    padding: 3rem;
+}
+
+.about-container, 
+.game-container,
+.gameplay-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.about-game,
+.game-image,
+.gameplay-image {
+    width: 15rem;
+    height: 15rem;
+    background-color : black;
+}
+
+.about-content {
+    width: 40rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#game,
+#donation {
+    padding: 3rem;
+    background-color: #1f1f1f6d;
+}
+.game-content {
+    width: 60vw;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gameplay-content {
+    width: 60vw;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gameplay-content > * {
+    margin-bottom: 1rem;
+}
+
+.donation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.donation-content {
+    width: 40rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tier-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.tier-content {
+    width: 10rem;
+    height: 10rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+}
+
+.tier-container > * {
+    margin-left: 1rem;
 }
 
