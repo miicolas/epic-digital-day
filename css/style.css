@@ -11,10 +11,13 @@ body {
     background-color: var(--main-bg-color);
     color: #ffffff;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--main-text-color2);
 }
 
 a:hover {
@@ -31,12 +34,12 @@ a:hover {
     border-radius: 1rem;
     width: fit-content;
     transition: ease-in-out 0.2s;
-    box-shadow: 0 5px 10px var(--main-bouton-color);
+    box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
 }
 .button-primary:hover {
     background-color: var(--main-bouton-hover-color);
     transition: ease-in-out 0.2s;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0);
+    box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
     
 }
 
