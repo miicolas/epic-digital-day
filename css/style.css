@@ -40,7 +40,7 @@ a:hover {
     background-color: var(--main-bouton-hover-color);
     transition: ease-in-out 0.2s;
     box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
-    
+
 }
 
 h1 {
@@ -53,7 +53,7 @@ h1 {
     padding: 3rem;
 }
 
-.about-container, 
+.about-container,
 .game-container,
 .gameplay-container {
     display: flex;
@@ -98,14 +98,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .gameplay-content > * {
     margin-bottom: 1rem;
 }
-
-
 
 .donation-content {
     width: 30rem;
@@ -164,24 +162,24 @@ h1 {
     background-color: #6B6ECC;
     background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
   }
-  
+
   .content {
     padding: 20px;
   }
-  
+
   .content .price {
     color: white;
     font-weight: 800;
     font-size: 50px;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
   }
-  
+
   .content .description {
     color: rgba(255, 255, 255, 0.6);
     margin-top: 10px;
     font-size: 14px;
   }
-  
+
   .content .title {
     font-weight: 800;
     text-transform: uppercase;
@@ -190,10 +188,34 @@ h1 {
     font-size: 25px;
     letter-spacing: 1px;
   }
-  
-  
+
+
   .card-button-text{
     color : var(--main-text-color)
   }
-  
 
+
+@media only screen and (max-width: 768px) {
+
+    .donation-card {
+        flex-direction: column;
+    }
+    .donation-card > * {
+        margin-left: 0;
+    }
+    .about-container,
+    .game-container,
+    .gameplay-container {
+        flex-direction: column;
+    }
+    .about-content,
+    .game-content,
+    .gameplay-content {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+
+
+
+}
